@@ -5,7 +5,7 @@ import argparse
 import requests
 import os
 import subprocess
-from font_gohu_font import Gohufont
+from font_gohu_font import GohufontUni14
 from StringIO import StringIO
 try:
     from inky import InkyWHAT
@@ -18,7 +18,7 @@ from PIL import Image, ImageFont, ImageDraw
 inky_display = InkyWHAT("red")
 inky_display.set_border(inky_display.WHITE)
 
-font = ImageFont.truetype(Gohufont, 14)
+font = ImageFont.truetype(GohufontUni14, 14)
 
 fulltext = subprocess.check_output(['bar-usage'])
 fulltext = fulltext.decode('utf-8')
