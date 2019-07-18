@@ -1,0 +1,3 @@
+[submodule "font_gohu_font/files"]
+	path = font_gohu/files
+	url = https://github.com/koemaeda/gohufont-ttf
