@@ -5,7 +5,7 @@ import argparse
 import requests
 import os
 import subprocess
-from font_gohu_font import GohufontUni14
+from font_gohu import GohufontUni14
 from StringIO import StringIO
 try:
     from inky import InkyWHAT
