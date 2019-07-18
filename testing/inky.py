@@ -1,18 +1,18 @@
 """Testing library to allow for standard debugging with PIL/Pillow"""
 from PIL import Image, ImageDraw
 
-WHITE = 0
-BLACK = 1
-RED = 2
-YELLOW = 2
+WHITE = '#fff'
+BLACK = '#000'
+RED = '#f00'
+YELLOW = '#ff0'
 
 class InkyWHAT:
     """Fallback eInk Display Driver for the InkyWHAT"""
     def __init__(self, colour='red'):
-        self.WHITE = '#fff'
-        self.BLACK = '#000'
-        self.RED = '#f00'
-        self.YELLOW = 2
+        self.WHITE = WHITE
+        self.BLACK = BLACK
+        self.RED = RED
+        self.YELLOW = YELLOW
         self.WIDTH = 400
         self.HEIGHT = 300
         self.image = Image.new("P", (self.WIDTH, self.HEIGHT))

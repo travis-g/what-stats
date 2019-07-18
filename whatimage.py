@@ -9,8 +9,10 @@ from font_gohu_font import Gohufont
 from StringIO import StringIO
 try:
     from inky import InkyWHAT
+    _image_mode = "P"
 except ImportError:
     from testing import InkyWHAT
+    _image_mode = "RGB"
 from PIL import Image, ImageFont, ImageDraw
 
 inky_display = InkyWHAT("red")
@@ -21,7 +23,7 @@ font = ImageFont.truetype(Gohufont, 14)
 fulltext = subprocess.check_output(['bar-usage'])
 fulltext = fulltext.decode('utf-8')
 
-img = Image.new("RGB", (inky_display.WIDTH, inky_display.HEIGHT), inky_display.WHITE)
+img = Image.new(_image_mode, (inky_display.WIDTH, inky_display.HEIGHT), inky_display.WHITE)
 draw = ImageDraw.Draw(img)
 
 draw.multiline_text((0, 0), fulltext, fill=inky_display.BLACK,
