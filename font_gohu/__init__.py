@@ -6,10 +6,10 @@ font_directory = os.path.join(
     os.path.abspath(os.path.dirname(__file__)), 'files')
 
 font_files = {
-# Gohufont11
-# Gohufont14
-# GohufontUni11
-# GohufontUni14
+    # Gohufont11
+    # Gohufont14
+    # GohufontUni11
+    # GohufontUni14
 }
 
 for font in list(glob.glob(os.path.join(font_directory, "*.ttf"))):
