@@ -6,8 +6,6 @@ from font_gohu import GohufontUni14
 from StringIO import StringIO
 from PIL import Image, ImageFont, ImageDraw
 
-from stats import Stats
-
 try:
     from inky import InkyWHAT
     _image_mode = "P" # palette-based
