@@ -1,4 +1,4 @@
-setuptools==40.8.0
+setuptools==65.5.1
 python_string_utils==0.6.0
 requests==2.22.0
 Pillow==6.1.0
